@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -42,11 +43,23 @@
             label1.TabIndex = 0;
             label1.Text = "l1";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.RosyBrown;
+            button1.Location = new Point(39, 147);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 48);
+            button1.TabIndex = 1;
+            button1.Text = "B1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label1);
             Name = "Form1";
             Text = "F1";
@@ -57,5 +70,6 @@
         #endregion
 
         private Label label1;
+        private Button button1;
     }
 }
